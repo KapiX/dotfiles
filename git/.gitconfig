@@ -1,0 +1,29 @@
+[user]
+	email = kacperkasper@gmail.com
+	name = Kacper Kasper
+[push]
+	default = simple
+[core]
+	editor = vim
+[color "diff"]
+	meta = yellow bold ul
+	frag = cyan bold ul
+	old = red bold
+	new = green bold
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+[alias]
+	g = grep --extended-regexp --break --heading --line-number
+	s = status --short --branch
+	commend = commit --amend --no-edit
+	ignored = !git ls-files -v | grep "^[[:lower:]]"
+	skipped = !git ls-files -v | grep ^S
+	grog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
+	search = log --no-merges -i -E --pretty='%h (%ad) - [%an] %s %d' --date=format:'%b %d %Y' --grep
+
+[url "git://anongit.kde.org/"]
+    insteadOf = kde:
+[url "git@git.kde.org:"]
+    pushInsteadOf = kde:
