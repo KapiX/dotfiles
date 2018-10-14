@@ -1,0 +1,10 @@
+[ui]
+username = Kacper Kasper <kacperkasper@gmail.com>
+editor = vim
+
+[pager]
+pager = LESS='FRX' less
+
+[extensions]
+pager =
+color =
